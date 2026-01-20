@@ -1,26 +1,26 @@
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
 }
 
-model Category {
-  id       Int       @id @default(autoincrement())
-  name     String
+model Product {
+  id          Int      @id @default(autoincrement())
+  title       String
   description String?
-  products Product[]
+  price       Float
+  quantity    Int
+  type        String?
+  image       String?
+  categoryId  Int
+  category    Category @relation(fields: [categoryId], references: [id])
 }
 
-model Product {
-  id            Int       @id @default(autoincrement())
-  title         String
-  description   String?
-  price         Float
-  quantity      Int
-  type          String?
-  image         String?
-  categoryId    Int
-  category      Category  @relation(fields: [categoryId], references: [id])
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String    @unique
+  products Product[]
 }

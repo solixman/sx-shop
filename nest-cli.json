@@ -4,23 +4,15 @@
   "monorepo": true,
   "root": "apps",
   "projects": {
-    "API-gateway": {
-      "type": "application",
-      "root": "apps/API-gateway",
-      "entryFile": "main",
-      "sourceRoot": "apps/API-gateway/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/API-gateway/tsconfig.app.json"
-      }
-    },
     "api-gateway": {
       "type": "application",
       "root": "apps/api-gateway",
       "entryFile": "main",
       "sourceRoot": "apps/api-gateway/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+        "tsConfigPath": "apps/api-gateway/tsconfig.json"
       }
+      
     },
     "auth-service": {
       "type": "application",
@@ -28,7 +20,7 @@
       "entryFile": "main",
       "sourceRoot": "apps/auth-service/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/auth-service/tsconfig.app.json"
+        "tsConfigPath": "apps/auth-service/tsconfig.json"
       }
     },
     "order-service": {
@@ -37,7 +29,7 @@
       "entryFile": "main",
       "sourceRoot": "apps/order-service/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/order-service/tsconfig.app.json"
+        "tsConfigPath": "apps/order-service/tsconfig.json"
       }
     },
     "product-service": {
@@ -46,7 +38,7 @@
       "entryFile": "main",
       "sourceRoot": "apps/product-service/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/product-service/tsconfig.app.json"
+        "tsConfigPath": "apps/product-service/tsconfig.json"
       }
     }
   }

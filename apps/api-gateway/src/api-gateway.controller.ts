@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get } from '@nestjs/common';
 import { ApiGatewayService } from './api-gateway.service';
 
 @Controller()
@@ -8,5 +8,10 @@ export class ApiGatewayController {
   @Get()
   getHello(): string {
     return this.apiGatewayService.getHello();
+  }
+
+  @Get('test')
+  testing():string{
+    return 'hiiii' ;
   }
 }
