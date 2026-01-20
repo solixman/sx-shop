@@ -7,7 +7,7 @@
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "useDefineForClassFields": false, 
+    "useDefineForClassFields": false,
     "strict": true,
     "skipLibCheck": true,
     "outDir": "./dist",
@@ -20,6 +20,7 @@
     "strictNullChecks": true,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {}
   }
 }

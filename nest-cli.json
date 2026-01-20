@@ -12,7 +12,6 @@
       "compilerOptions": {
         "tsConfigPath": "apps/api-gateway/tsconfig.json"
       }
-      
     },
     "auth-service": {
       "type": "application",
@@ -29,7 +28,7 @@
       "entryFile": "main",
       "sourceRoot": "apps/order-service/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/order-service/tsconfig.json"
+        "tsConfigPath": "apps/order-service/tsconfig.app.json"
       }
     },
     "product-service": {
